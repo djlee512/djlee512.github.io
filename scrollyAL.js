@@ -5,13 +5,13 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
 
   var settings = { 
     consumer: { 
-      firstName: "Dan",
-      lastName: "Lee",
-      addressLine1: "1029 E8th Ave",
-      postalCode: "99547",
-      city: "Denver",
-      state: "CO",
-      phone: '9176961311'
+      firstName: "Michael",
+      lastName: "Bluth",
+      addressLine1: "1 Bluth Drive",
+      postalCode: "80401",
+      city: "Sudden Valley",
+      state: "CA",
+      phone: '3039637200'
     }
   }; 
 
@@ -19,7 +19,7 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
 
   var start = function(){
     doneSubmitting = false; 
-    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '80233'); 
+    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '80401'); 
     mainLoadable = HA.ui.loadable('scrollingInterview');
     if(mainLoadable.getState() != 'initial') return mainLoadable.on('initial',start);
     $.extend(models.consumer,settings.consumer,models.consumer);
