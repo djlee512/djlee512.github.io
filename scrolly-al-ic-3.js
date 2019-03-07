@@ -11,7 +11,7 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
       postalCode: "99547",
       city: "Denver",
       state: "CO",
-      phone: '9176961311'
+      phone: '9177271311'
     }
   }; 
 
@@ -19,7 +19,7 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
 
   var start = function(){
     doneSubmitting = false; 
-    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '80233'); 
+    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '80218'); 
     mainLoadable = HA.ui.loadable('scrollingInterview');
     if(mainLoadable.getState() != 'initial') return mainLoadable.on('initial',start);
     $.extend(models.consumer,settings.consumer,models.consumer);
