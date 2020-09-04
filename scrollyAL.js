@@ -19,7 +19,7 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
 
   var start = function(){
     doneSubmitting = false; 
-    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '80401'); 
+    var postalCode = prompt('What postalCode would you like to use?', models.consumer.postalCode || '99547'); 
     mainLoadable = HA.ui.loadable('scrollingInterview');
     if(mainLoadable.getState() != 'initial') return mainLoadable.on('initial',start);
     $.extend(models.consumer,settings.consumer,models.consumer);
