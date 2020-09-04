@@ -8,9 +8,9 @@ var bookmarklet = (function(w,d,sb,$,models,cards,pub){
       firstName: "Michael",
       lastName: "Bluth",
       addressLine1: "1 Bluth Drive",
-      postalCode: "80401",
-      city: "Sudden Valley",
-      state: "CA",
+      postalCode: "99547",
+      city: "Atka",
+      state: "AK",
       phone: '3039637200'
     }
   }; 
